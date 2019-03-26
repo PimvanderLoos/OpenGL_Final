@@ -94,7 +94,6 @@ scale: 200
 cOffset: 1.5 -0.7 0
 rOffset: 0 0 0
 sType: 0
-defaultModel
 
 dir: rhino2/
 scale: 12
@@ -161,7 +160,7 @@ scale: 1
 gravity: 9.81
 model: water
 
-pos: -87.3748 -44.1589 -128.06
+pos: -87.37 -44.16 -128.06
 rot: 0 117.603 0
 cOffset: 0 0 0
 rOffset: 0 0 0
@@ -169,14 +168,13 @@ scale: 1
 gravity: 9.81
 model: cat2
 
-pos: 10.9757 -41.4805 -276.099
+pos: 16.87 -41.48 -139.51
 rot: 0 189.846 0
 cOffset: 0 0 0
 rOffset: 355 0 0
 scale: 1
 gravity: 9.81
 model: cat2
-mainEntity
 
 pos: 71.06 -34.7 -96.37
 rot: 0 2.43635 0
@@ -234,13 +232,14 @@ scale: 1
 gravity: 9.81
 model: crocodile2
 
-pos: 74.62 -21.66 -212.6
-rot: 0 -175.039 0
+pos: -45.8764 -37.2289 -65.126
+rot: 0 -41.6329 0
 cOffset: 0 0 0
 rOffset: 0 0 0
 scale: 1
 gravity: 9.81
 model: sniper
+mainEntity
 
 pos: -93.35 -38.84 -98.42
 rot: 0 35.7262 0

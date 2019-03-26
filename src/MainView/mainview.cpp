@@ -447,12 +447,23 @@ void MainView::setMainEntity(Entity *entity)
     emit mainEntityChanged();
 }
 
-QVector<QString> MainView::getModelList()
+bool caseInsensitiveLessThan(const QString &s1, const QString &s2)
 {
-    QVector<QString> ret;
-    ret.reserve(static_cast<int>(d_models.size()));
+    return s1.toLower() < s2.toLower();
+}
+
+QStringList MainView::getModelList()
+{
+    QStringList ret;
     for (auto &model : d_models)
         ret.append(model.second.first->getQFileName());
+    return ret;
+}
+
+QStringList MainView::getSortedModelList()
+{
+    QStringList ret = getModelList();
+    qSort(ret.begin(), ret.end(), caseInsensitiveLessThan);
     return ret;
 }
 
