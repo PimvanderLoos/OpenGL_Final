@@ -185,7 +185,8 @@ class MainView : public QOpenGLWidget, protected QOpenGLFunctions_3_3_Core
         static void (MainView::*s_shadingloader[])(bool isLoaded);
 
     public:
-        QVector<QString> getModelList();
+        QStringList getModelList();
+        QStringList getSortedModelList();
         void modelSelected(QString const &newModel);
         Entity const *getMainEntity() const;
         Entity *getMainEntity();

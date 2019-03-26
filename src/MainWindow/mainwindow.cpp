@@ -240,7 +240,7 @@ void MainWindow::updateMainEntityPosition()
 void MainWindow::recalc_modelList()
 {
     ui->comboBox_Entity_Model->clear();
-    for (auto &modelName : ui->mainView->getModelList())
+    for (auto &modelName : ui->mainView->getSortedModelList())
         ui->comboBox_Entity_Model->addItem(modelName);
     on_mainModelChanged();
 }
