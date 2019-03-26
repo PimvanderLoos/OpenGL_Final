@@ -1,8 +1,32 @@
 MODELS:
-dir: destroyed_ship/
-scale: 84
-cOffset: 0.7 0 0
-rOffset: 0 0 0
+dir: rhino3/
+scale: 12
+cOffset: 1.5 -0.8 0
+rOffset: 0 178 0
+sType: 0
+
+dir: sniper/
+scale: 5
+cOffset: 0.37 -0.1 -0.16
+rOffset: 0 90 0
+sType: 0
+
+dir: koi_white/
+scale: 5
+cOffset: 1.5 -0.7 0
+rOffset: 0 90 0
+sType: 0
+
+dir: rhino1/
+scale: 22
+cOffset: 1.5 -0.8 0
+rOffset: 0 180 0
+sType: 0
+
+dir: hippo/
+scale: 12
+cOffset: 1.5 -0.8 0
+rOffset: 0 178 0
 sType: 0
 
 dir: water/
@@ -29,39 +53,15 @@ cOffset: 1.5 -0.8 0
 rOffset: 0 178 0
 sType: 0
 
-dir: hippo/
-scale: 12
-cOffset: 1.5 -0.8 0
-rOffset: 0 178 0
-sType: 0
-
-dir: koi_white/
-scale: 5
-cOffset: 1.5 -0.7 0
-rOffset: 0 90 0
-sType: 0
-
-dir: sniper/
-scale: 5
-cOffset: 0.37 -0.1 -0.16
-rOffset: 0 90 0
-sType: 0
-
-dir: rhino1/
-scale: 22
-cOffset: 1.5 -0.8 0
-rOffset: 0 180 0
-sType: 0
-
-dir: rhino3/
-scale: 12
-cOffset: 1.5 -0.8 0
-rOffset: 0 178 0
-sType: 0
-
 dir: windmill/
 scale: 120
 cOffset: 1.5 0 0
+rOffset: 0 0 0
+sType: 0
+
+dir: destroyed_ship/
+scale: 84
+cOffset: 0.7 0 0
 rOffset: 0 0 0
 sType: 0
 
@@ -132,26 +132,42 @@ cOffset: 0.5 -0.3 0
 rOffset: 0 180 0
 sType: 0
 
-dir: pirate_ship/
-scale: 217
-cOffset: 0.7 0 0
-rOffset: 0 180 0
-sType: 0
-
 dir: lioness/
 scale: 12
 cOffset: 1.5 -0.8 0
 rOffset: 0 178 0
 sType: 0
 
+dir: pirate_ship/
+scale: 217
+cOffset: 0.7 0 0
+rOffset: 0 180 0
+sType: 0
+
 ENTITIES:
-pos: 91.05 -33.53 -134.04
-rot: 0 -136.916 0
+pos: -81.8 -39.56 -94.53
+rot: 0 -0.983255 0
 cOffset: 0 0 0
-rOffset: 0 0 0
+rOffset: 350 0 0
 scale: 4
 gravity: 9.81
-model: destroyed_ship
+model: rhino3
+
+pos: 74.62 -21.66 -212.6
+rot: 0 -175.039 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 1
+gravity: 9.81
+model: sniper
+
+pos: -93.35 -38.84 -98.42
+rot: 0 35.7262 0
+cOffset: 0 0 0
+rOffset: 350 0 0
+scale: 1
+gravity: 9.81
+model: rhino1
 
 pos: 2.23 -49 -39.98
 rot: 0 0 0
@@ -169,8 +185,8 @@ scale: 1
 gravity: 9.81
 model: cat2
 
-pos: 10.9757 -41.4805 -276.099
-rot: 0 189.846 0
+pos: 28.3101 -25.1188 -259.49
+rot: 0 187.397 0
 cOffset: 0 0 0
 rOffset: 355 0 0
 scale: 1
@@ -234,30 +250,6 @@ scale: 1
 gravity: 9.81
 model: crocodile2
 
-pos: 74.62 -21.66 -212.6
-rot: 0 -175.039 0
-cOffset: 0 0 0
-rOffset: 0 0 0
-scale: 1
-gravity: 9.81
-model: sniper
-
-pos: -93.35 -38.84 -98.42
-rot: 0 35.7262 0
-cOffset: 0 0 0
-rOffset: 350 0 0
-scale: 1
-gravity: 9.81
-model: rhino1
-
-pos: -81.8 -39.56 -94.53
-rot: 0 -0.983255 0
-cOffset: 0 0 0
-rOffset: 350 0 0
-scale: 4
-gravity: 9.81
-model: rhino3
-
 pos: -3.23 71.66 49.67
 rot: 0 -177.488 0
 cOffset: 0 0 0
@@ -265,6 +257,14 @@ rOffset: 0 0 0
 scale: 1
 gravity: 9.81
 model: windmill
+
+pos: 91.05 -33.53 -134.04
+rot: 0 -136.916 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 4
+gravity: 9.81
+model: destroyed_ship
 
 pos: 22.48 19.06 36.27
 rot: 0 -17.0031 0
@@ -386,14 +386,6 @@ scale: 1
 gravity: 9.81
 model: chopper
 
-pos: -223.53 25 -87.11
-rot: 0 77.2056 0
-cOffset: 0 0 0
-rOffset: 355 0 0
-scale: 1
-gravity: 9.81
-model: pirate_ship
-
 pos: -4.58 14.89 22.42
 rot: 0 -332.845 0
 cOffset: 0 0 0
@@ -409,4 +401,12 @@ rOffset: 324 0 0
 scale: 1
 gravity: 9.81
 model: lioness
+
+pos: -223.53 25 -87.11
+rot: 0 77.2056 0
+cOffset: 0 0 0
+rOffset: 355 0 0
+scale: 1
+gravity: 9.81
+model: pirate_ship
 
