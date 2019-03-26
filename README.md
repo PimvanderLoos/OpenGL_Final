@@ -5,7 +5,7 @@
 
 ![full_scene](/screenshots/full_scene_crop.png)
 
-![rhino_family](/screenshots/rhino_family.png)
+![rhino_family](/screenshots/rhino_Family.png)
 
 ![rhino_hunt](/screenshots/hunt.png)
 
