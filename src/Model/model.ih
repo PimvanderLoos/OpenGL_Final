@@ -1,0 +1,13 @@
+#include "model.h"
+
+#include <QDebug>
+#include <QFile>
+#include <QImage>
+
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <sstream>
+#include <experimental/filesystem>
+
+using namespace std;

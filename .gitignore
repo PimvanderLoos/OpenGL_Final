@@ -1,0 +1,54 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# My stuff
+CMakeModules/*
+Code/CMakeFiles/*
+build-Game-Desktop_Qt_5_12_0_GCC_64bit2-Debug/*
+cmake-build-debug/*
+cmake-build-debug-gcc9/*
+*.stash
+.idea/*
+resources/*
+game/*
+CMakeFiles/*
+Game.pro.user
+Makefile
+
+# Qt shit
+Game
+moc_mainview.cpp
+moc_mainwindow.cpp
+moc_predefs.h
+qrc_shaders.cpp
+ui_mainwindow.h

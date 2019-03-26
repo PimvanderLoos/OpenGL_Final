@@ -1,0 +1,1581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1410</width>
+    <height>879</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="sizeConstraint">
+     <enum>QLayout::SetNoConstraint</enum>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QGroupBox" name="settingsBox">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>245</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>220</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="palette">
+       <palette>
+        <active>
+         <colorrole role="Light">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>252</red>
+            <green>64</green>
+            <blue>54</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </active>
+        <inactive>
+         <colorrole role="Light">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>252</red>
+            <green>64</green>
+            <blue>54</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </inactive>
+        <disabled>
+         <colorrole role="Light">
+          <brush brushstyle="SolidPattern">
+           <color alpha="255">
+            <red>252</red>
+            <green>64</green>
+            <blue>54</blue>
+           </color>
+          </brush>
+         </colorrole>
+        </disabled>
+       </palette>
+      </property>
+      <property name="title">
+       <string>Controls</string>
+      </property>
+      <layout class="QFormLayout" name="formLayout">
+       <property name="horizontalSpacing">
+        <number>0</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item row="2" column="1">
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>240</width>
+           <height>522</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>240</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="currentIndex">
+          <number>1</number>
+         </property>
+         <widget class="QWidget" name="tab_Global_Controls">
+          <attribute name="title">
+           <string>Global</string>
+          </attribute>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>240</width>
+             <height>601</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>240</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>240</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="title">
+            <string>Global Controls</string>
+           </property>
+           <widget class="QGroupBox" name="scalingBox">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>20</y>
+              <width>240</width>
+              <height>101</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>177</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>400</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="title">
+             <string>Zoom</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QSlider" name="ScaleSlider">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>103</horstretch>
+                 <verstretch>98</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100000</width>
+                 <height>100000</height>
+                </size>
+               </property>
+               <property name="toolTipDuration">
+                <number>2</number>
+               </property>
+               <property name="minimum">
+                <number>50</number>
+               </property>
+               <property name="maximum">
+                <number>242</number>
+               </property>
+               <property name="value">
+                <number>70</number>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="invertedAppearance">
+                <bool>false</bool>
+               </property>
+               <property name="invertedControls">
+                <bool>false</bool>
+               </property>
+               <property name="tickPosition">
+                <enum>QSlider::NoTicks</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="ResetScaleButton">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>103</horstretch>
+                 <verstretch>142</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>100000</width>
+                 <height>100000</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>Reset Zoom</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QGroupBox" name="shadingBox">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>120</y>
+              <width>240</width>
+              <height>121</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>20500</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="title">
+             <string>Shading</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QRadioButton" name="PhongButton">
+               <property name="text">
+                <string>Pho&amp;ng</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="NormalButton">
+               <property name="text">
+                <string>Normal</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="GouraudButton">
+               <property name="text">
+                <string>Gouraud</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QCheckBox" name="checkBox">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>260</y>
+              <width>240</width>
+              <height>23</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Show BoundingBoxes</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_Entity_Controls">
+          <attribute name="title">
+           <string>Entity</string>
+          </attribute>
+          <widget class="QGroupBox" name="groupBox_Entity_Controls">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>240</width>
+             <height>481</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>240</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>240</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="title">
+            <string>Entity Controls</string>
+           </property>
+           <widget class="QWidget" name="layoutWidget_1">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>28</y>
+              <width>231</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_EntityCycling" stretch="0,0">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="button_previous_entity">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>PREVIOUS</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="button_next_entity">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>NEXT</string>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+               <property name="autoDefault">
+                <bool>true</bool>
+               </property>
+               <property name="default">
+                <bool>false</bool>
+               </property>
+               <property name="flat">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="layoutWidget_2">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>60</y>
+              <width>231</width>
+              <height>28</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_EntityManagement">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="button_new_entity">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>NEW ENTITY</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="button_kill_entity">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>35</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>KILL</string>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>16</width>
+                 <height>16</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="button_dupe_entity">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>DUPE ENTITY</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="layoutWidget_3">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>90</y>
+              <width>231</width>
+              <height>29</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_Entity_CamControl">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QPushButton" name="button_hold_cam">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>1170000</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>HOLD CAM</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="button_free_cam">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>11700</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>FREE CAM</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QComboBox" name="comboBox_Entity_Model">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>120</y>
+              <width>231</width>
+              <height>25</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>210</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="acceptDrops">
+             <bool>false</bool>
+            </property>
+            <property name="editable">
+             <bool>false</bool>
+            </property>
+            <property name="insertPolicy">
+             <enum>QComboBox::InsertAlphabetically</enum>
+            </property>
+            <property name="minimumContentsLength">
+             <number>3</number>
+            </property>
+           </widget>
+           <widget class="QWidget" name="layoutWidget_4">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>150</y>
+              <width>231</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_Entity_RotDial">
+             <item>
+              <widget class="QDial" name="RotationDialX_Entity">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Rotation along the X-axis&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="maximum">
+                <number>359</number>
+               </property>
+               <property name="value">
+                <number>0</number>
+               </property>
+               <property name="wrapping">
+                <bool>true</bool>
+               </property>
+               <property name="notchTarget">
+                <double>12.000000000000000</double>
+               </property>
+               <property name="notchesVisible">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDial" name="RotationDialY_Entity">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Rotation along the Y-axis&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="maximum">
+                <number>359</number>
+               </property>
+               <property name="wrapping">
+                <bool>true</bool>
+               </property>
+               <property name="notchTarget">
+                <double>12.000000000000000</double>
+               </property>
+               <property name="notchesVisible">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDial" name="RotationDialZ_Entity">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Rotation along the Z-axis&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="maximum">
+                <number>359</number>
+               </property>
+               <property name="wrapping">
+                <bool>true</bool>
+               </property>
+               <property name="notchTarget">
+                <double>12.000000000000000</double>
+               </property>
+               <property name="notchesVisible">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="layoutWidget_5">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>220</y>
+              <width>231</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_Entity_RotText">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_rotationX_Entity">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="maximum">
+                <double>360.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_rotationY_Entity">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="maximum">
+                <double>360.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_rotationZ_Entity">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="maximum">
+                <double>360.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QPushButton" name="pushButton_Reset_Rotation_Entity">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>280</y>
+              <width>221</width>
+              <height>21</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Reset Rotation</string>
+            </property>
+           </widget>
+           <widget class="QSlider" name="horizontalSlider_Scale_Entity">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>340</y>
+              <width>231</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>1001</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_Entity_Scale">
+            <property name="geometry">
+             <rect>
+              <x>4</x>
+              <y>310</y>
+              <width>167</width>
+              <height>27</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Entity Scale</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_Entity_Position">
+            <property name="geometry">
+             <rect>
+              <x>2</x>
+              <y>400</y>
+              <width>203</width>
+              <height>28</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Entity Position</string>
+            </property>
+           </widget>
+           <widget class="QWidget" name="layoutWidget_6">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>430</y>
+              <width>231</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_Entity_PosText">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <property name="sizeConstraint">
+              <enum>QLayout::SetDefaultConstraint</enum>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_positionX_Entity">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="decimals">
+                <number>2</number>
+               </property>
+               <property name="minimum">
+                <double>-1000000.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>1000000.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_positionY_Entity">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="minimum">
+                <double>-1000000.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>1000000.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_positionZ_Entity">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="minimum">
+                <double>-1000000.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>1000000.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QDoubleSpinBox" name="doubleSpinBox_Scale_Entity">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>360</y>
+              <width>231</width>
+              <height>35</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="maximum">
+             <double>100000.000000000000000</double>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_Model_Controls">
+          <attribute name="title">
+           <string>Model</string>
+          </attribute>
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>231</width>
+             <height>471</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string>Model Controls</string>
+           </property>
+           <widget class="QWidget" name="layoutWidget_7">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>60</y>
+              <width>231</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_Model_RotDial">
+             <item>
+              <widget class="QDial" name="RotationDialX_Model">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Rotation along the X-axis&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="maximum">
+                <number>359</number>
+               </property>
+               <property name="value">
+                <number>0</number>
+               </property>
+               <property name="wrapping">
+                <bool>true</bool>
+               </property>
+               <property name="notchTarget">
+                <double>12.000000000000000</double>
+               </property>
+               <property name="notchesVisible">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDial" name="RotationDialY_Model">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Rotation along the Y-axis&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="maximum">
+                <number>359</number>
+               </property>
+               <property name="wrapping">
+                <bool>true</bool>
+               </property>
+               <property name="notchTarget">
+                <double>12.000000000000000</double>
+               </property>
+               <property name="notchesVisible">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDial" name="RotationDialZ_Model">
+               <property name="toolTip">
+                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Rotation along the Z-axis&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               </property>
+               <property name="maximum">
+                <number>359</number>
+               </property>
+               <property name="wrapping">
+                <bool>true</bool>
+               </property>
+               <property name="notchTarget">
+                <double>12.000000000000000</double>
+               </property>
+               <property name="notchesVisible">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QWidget" name="layoutWidget_8">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>130</y>
+              <width>231</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_Model_RotText">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_rotationX_Model">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="maximum">
+                <double>360.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_rotationY_Model">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="maximum">
+                <double>360.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_rotationZ_Model">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="maximum">
+                <double>360.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QDoubleSpinBox" name="doubleSpinBox_Scale_Model">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>240</y>
+              <width>231</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>9</pointsize>
+             </font>
+            </property>
+            <property name="maximum">
+             <double>100000.000000000000000</double>
+            </property>
+           </widget>
+           <widget class="QSlider" name="horizontalSlider_Scale_Model">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>210</y>
+              <width>231</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="minimum">
+             <number>1</number>
+            </property>
+            <property name="maximum">
+             <number>1001</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_Model_Scale_2">
+            <property name="geometry">
+             <rect>
+              <x>2</x>
+              <y>190</y>
+              <width>170</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Model Scale</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_Model_Scale_3">
+            <property name="geometry">
+             <rect>
+              <x>2</x>
+              <y>30</y>
+              <width>240</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Model Rotation</string>
+            </property>
+           </widget>
+           <widget class="QWidget" name="layoutWidget_9">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>310</y>
+              <width>279</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_Model_OffsetText">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_offsetX_Model">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="minimum">
+                <double>-999999.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>999999.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_offsetY_Model">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="minimum">
+                <double>-999999.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>999999.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_offsetZ_Model">
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="minimum">
+                <double>-999999.000000000000000</double>
+               </property>
+               <property name="maximum">
+                <double>999999.000000000000000</double>
+               </property>
+               <property name="value">
+                <double>0.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QLabel" name="label_Model_Scale_4">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>280</y>
+              <width>170</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Model camera offset</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+       <item row="7" column="1">
+        <widget class="QLineEdit" name="lineEdit_Console">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>240</width>
+           <height>0</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0" colspan="2">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetFixedSize</enum>
+         </property>
+         <property name="verticalSpacing">
+          <number>2</number>
+         </property>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_FPS">
+           <property name="text">
+            <string>FPS</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLCDNumber" name="lcdNumber_fps">
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Button">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>39</red>
+                 <green>243</green>
+                 <blue>11</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Light">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>0</red>
+                 <green>0</green>
+                 <blue>0</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Midlight">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>124</red>
+                 <green>73</green>
+                 <blue>245</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="BrightText">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>64</red>
+                 <green>64</green>
+                 <blue>64</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>252</red>
+                 <green>0</green>
+                 <blue>231</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Window">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>213</red>
+                 <green>241</green>
+                 <blue>25</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="AlternateBase">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>55</red>
+                 <green>248</green>
+                 <blue>244</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Button">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>39</red>
+                 <green>243</green>
+                 <blue>11</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Light">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>0</red>
+                 <green>0</green>
+                 <blue>0</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Midlight">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>124</red>
+                 <green>73</green>
+                 <blue>245</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="BrightText">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>64</red>
+                 <green>64</green>
+                 <blue>64</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>252</red>
+                 <green>0</green>
+                 <blue>231</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Window">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>213</red>
+                 <green>241</green>
+                 <blue>25</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="AlternateBase">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>55</red>
+                 <green>248</green>
+                 <blue>244</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Button">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>39</red>
+                 <green>243</green>
+                 <blue>11</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Light">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>0</red>
+                 <green>0</green>
+                 <blue>0</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Midlight">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>124</red>
+                 <green>73</green>
+                 <blue>245</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="BrightText">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>64</red>
+                 <green>64</green>
+                 <blue>64</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Base">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>213</red>
+                 <green>241</green>
+                 <blue>25</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="Window">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>213</red>
+                 <green>241</green>
+                 <blue>25</blue>
+                </color>
+               </brush>
+              </colorrole>
+              <colorrole role="AlternateBase">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>55</red>
+                 <green>248</green>
+                 <blue>244</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+           <property name="font">
+            <font>
+             <weight>75</weight>
+             <bold>true</bold>
+             <stylestrategy>PreferAntialias</stylestrategy>
+            </font>
+           </property>
+           <property name="toolTip">
+            <string>Score</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLCDNumber" name="lcdNumber_frameTime_avg">
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Light">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>0</red>
+                 <green>0</green>
+                 <blue>0</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Light">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>0</red>
+                 <green>0</green>
+                 <blue>0</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Light">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>0</red>
+                 <green>0</green>
+                 <blue>0</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="label_AVG_FT">
+           <property name="text">
+            <string>AVG FT</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QLCDNumber" name="lcdNumber_frameTime_max">
+           <property name="palette">
+            <palette>
+             <active>
+              <colorrole role="Light">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>0</red>
+                 <green>0</green>
+                 <blue>0</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </active>
+             <inactive>
+              <colorrole role="Light">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>0</red>
+                 <green>0</green>
+                 <blue>0</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </inactive>
+             <disabled>
+              <colorrole role="Light">
+               <brush brushstyle="SolidPattern">
+                <color alpha="255">
+                 <red>0</red>
+                 <green>0</green>
+                 <blue>0</blue>
+                </color>
+               </brush>
+              </colorrole>
+             </disabled>
+            </palette>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="label_MAX_FT">
+           <property name="text">
+            <string>Max FT</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="MainView" name="mainView"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>MainView</class>
+   <extends>QOpenGLWidget</extends>
+   <header location="global">src/MainView/mainview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

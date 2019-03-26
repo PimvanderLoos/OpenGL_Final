@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>src/shaders/fragshader_AABB.glsl</file>
+        <file>src/shaders/fragshader_gouraud.glsl</file>
+        <file>src/shaders/fragshader_normal.glsl</file>
+        <file>src/shaders/fragshader_cubemap.glsl</file>
+        <file>src/shaders/fragshader_phong.glsl</file>
+        <file>src/shaders/fragshader_water.glsl</file>
+        <file>src/shaders/fragshader_splash.glsl</file>
+        <file>src/shaders/vertshader_AABB.glsl</file>
+        <file>src/shaders/vertshader_gouraud.glsl</file>
+        <file>src/shaders/vertshader_normal.glsl</file>
+        <file>src/shaders/vertshader_cubemap.glsl</file>
+        <file>src/shaders/vertshader_phong.glsl</file>
+        <file>src/shaders/vertshader_water.glsl</file>
+        <file>src/shaders/vertshader_splash.glsl</file>
+    </qresource>
+</RCC>

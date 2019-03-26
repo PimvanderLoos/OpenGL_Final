@@ -1,0 +1,606 @@
+MODELS:
+dir: water/
+scale: 600
+cOffset: 1.4 -0.3 0.5
+rOffset: 0 0 0
+sType: 1
+
+dir: sun/
+scale: 200
+cOffset: 1.5 -0.7 0
+rOffset: 0 0 0
+sType: 0
+defaultModel
+
+dir: koi_white/
+scale: 5
+cOffset: 1.5 -0.7 0
+rOffset: 0 90 0
+sType: 0
+
+dir: house/
+scale: 90
+cOffset: 1.5 0 0
+rOffset: 0 0 0
+sType: 0
+
+dir: sniper/
+scale: 5
+cOffset: 0.37 -0.1 -0.16
+rOffset: 0 90 0
+sType: 0
+
+dir: chopper/
+scale: 98
+cOffset: 0.5 -0.3 0
+rOffset: 0 180 0
+sType: 0
+
+dir: island/
+scale: 400
+cOffset: 1.5 -0.7 0
+rOffset: 0 270 0
+sType: 0
+
+dir: cat2/
+scale: 5
+cOffset: 1.5 -0.7 0
+rOffset: 0 90 0
+sType: 0
+
+dir: koi_red/
+scale: 5
+cOffset: 1.5 -0.7 0
+rOffset: 0 90 0
+sType: 0
+
+dir: cube/
+scale: 5
+cOffset: 1.5 -0.5 0
+rOffset: 0 0 0
+sType: 0
+
+dir: elephant/
+scale: 10
+cOffset: 1.5 -0.8 0
+rOffset: 0 178 0
+sType: 0
+
+ENTITIES:
+pos: 2.23 -49 -39.98
+rot: 0 0 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: water
+
+pos: 3698 4321 6940
+rot: 0 0 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 0
+model: sun
+
+pos: 76.3 16.01 25.9
+rot: 0 178.7 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: house
+
+pos: 34.15 -35.53 -227.81
+rot: 0 -108.139 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: sniper
+
+pos: -73.24 -34.53 -154.52
+rot: 0 -86.9262 0
+cOffset: 0 0 0
+rOffset: 358 357 1
+scale: 0
+gravity: 9.81
+model: chopper
+
+pos: 0 16.4 -35
+rot: 0 0 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: island
+
+pos: 57.58 7.1 -308.28
+rot: 0 90.6248 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 57.74 7.09597 -303.28
+rot: 0 90.6248 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 57.91 7.09597 -298.28
+rot: 0 90.6248 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 58.08 7.09597 -293.29
+rot: 0 90.6248 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 58.24 7.09597 -288.29
+rot: 0 90.6248 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 58.41 7.09597 -283.29
+rot: 0 90.6248 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 58.58 7.09597 -278.3
+rot: 0 90.6248 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 58.74 7.09597 -273.3
+rot: 0 90.6248 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 58.91 7.09597 -268.3
+rot: 0 90.6248 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 59.08 7.09597 -263.3
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 64.07 7.09597 -263.52
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 69.07 7.09597 -263.74
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 74.06 7.09597 -263.96
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 79.06 7.09597 -264.17
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 84.05 7.09597 -264.39
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 89.05 7.09597 -264.61
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 94.04 7.09597 -264.83
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 99.04 7.09597 -265.05
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 104.04 7.09597 -265.26
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 109.03 7.09597 -265.48
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 114.03 7.09597 -265.7
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 119.02 7.09597 -265.92
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 124.02 7.09597 -266.14
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 129.01 7.09597 -266.35
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 134.01 7.09597 -266.57
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 139 7.09597 -266.79
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 144 7.09597 -267.01
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 148.99 7.09597 -267.22
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 153.99 7.09597 -267.44
+rot: 0 0.0378613 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 158.98 7.09597 -267.66
+rot: 0 -92.9729 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 158.5 7.09597 -272.64
+rot: 0 -92.9729 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 158.02 7.09597 -277.61
+rot: 0 -92.9729 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 157.54 7.09597 -282.59
+rot: 0 -92.9729 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 157.06 7.09597 -287.57
+rot: 0 -92.9729 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 156.58 7.09597 -292.54
+rot: 0 -92.9729 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 156.1 7.09597 -297.52
+rot: 0 -92.9729 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 155.62 7.09597 -302.5
+rot: 0 -92.9729 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 155.14 7.09597 -307.48
+rot: 0 -92.9729 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 154.66 7.09597 -312.45
+rot: 0 -92.9729 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 154.18 7.09597 -317.43
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 149.2 7.09597 -317
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 144.22 7.09597 -316.57
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 139.24 7.09597 -316.15
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 134.26 7.09597 -315.72
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 129.28 7.09597 -315.29
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 124.29 7.09597 -314.86
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 119.31 7.09597 -314.43
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 114.33 7.09597 -314.01
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 109.35 7.09597 -313.58
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 104.37 7.09597 -313.15
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 99.39 7.09597 -312.72
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 94.4 7.09597 -312.3
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 89.42 7.09597 -311.87
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 84.44 7.09597 -311.44
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 79.46 7.09597 -311.01
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 74.48 7.09597 -310.58
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 69.5 7.09597 -310.16
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 64.51 7.09597 -309.73
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: 59.53 7.1 -309.3
+rot: 0 -182.373 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: cat2
+
+pos: -110.91 -56.15 -193.8
+rot: 0 -20.7785 0
+cOffset: 0 0 0
+rOffset: 0 324 0
+scale: 0
+gravity: 9.81
+model: koi_red
+
+pos: 25.3506 -38.64 -207.442
+rot: 0 -122.385 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: elephant
+mainEntity
+
