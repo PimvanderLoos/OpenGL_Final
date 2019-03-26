@@ -1,10 +1,5 @@
 #include "mainview.ih"
 
-// COMPETITION: \\
-// TODO: Figure out why default offset isn't working anymore on laptop.
-// TODO: Fix blue-screen when resizing on laptop.
-// TODO: Put assets in zip and upload somewhere for downloading.
-
 using namespace std;
 using Clock = std::chrono::steady_clock;
 

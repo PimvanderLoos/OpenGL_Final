@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(game)
+project(OpenGL_Final)
 
 find_package(Qt5Core REQUIRED)
 find_package(Qt5Widgets REQUIRED)
