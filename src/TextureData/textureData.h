@@ -8,22 +8,8 @@
 
 #include <cstdint>
 
-#include <boost/archive/binary_oarchive.hpp>
-#include <boost/archive/binary_iarchive.hpp>
-#include <boost/serialization/vector.hpp>
-#include <boost/serialization/string.hpp>
-
 class TextureData
 {
-    private:
-        friend class boost::serialization::access;
-
-        template<class Archive>
-        void save(Archive &ar, const unsigned int version) const;
-        template<class Archive>
-        void load(Archive & ar, const unsigned int version);
-        BOOST_SERIALIZATION_SPLIT_MEMBER()
-
     public:
         QString d_file = "";
         QVector<quint8> *d_textureData; // (Temporarily) store texture data.
@@ -35,26 +21,8 @@ class TextureData
         void cleanup();
 };
 
-template<class Archive>
-inline void TextureData::save(Archive &ar, const unsigned int version) const
-{
-    ar &d_textureDataVec;
-    ar &d_imageWidth;
-    ar &d_imageHeight;
-}
-
-template<class Archive>
-inline void TextureData::load(Archive &ar, const unsigned int version)
-{
-    ar &d_textureDataVec;
-    ar &d_imageWidth;
-    ar &d_imageHeight;
-}
-
 inline void TextureData::cleanup()
 {
-//    delete d_imageHeight;
-//    delete d_imageWidth;
     delete d_textureData;
     d_textureDataVec.clear();
 }

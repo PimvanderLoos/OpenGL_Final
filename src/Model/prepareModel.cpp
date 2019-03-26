@@ -2,9 +2,7 @@
 
 void Model::prepareModel()
 {
-    if (d_binaryMeshFileAvailable)
-        prepareMeshFromBinary();
-    else if (d_objectFileAvailable)
+    if (d_objectFileAvailable)
     {
         readModel(d_currentDirectory, d_objectFile);
         unitize();
@@ -12,7 +10,7 @@ void Model::prepareModel()
     }
     else
     {
-        qDebug() << "No binary/spec file available, so not reading any models! Directory:"
+        qDebug() << "No object file available, so not reading any models! Directory:"
                  << d_currentDirectory.c_str();
         return;
     }
@@ -37,58 +35,6 @@ void Model::prepareMesh()
             sm.setMaterial(d_material);
         else
             sm.setMaterial(*sm.d_MTL);
-    }
-}
-
-void Model::prepareMeshFromBinary()
-{
-    std::experimental::filesystem::path file = d_fileName;
-
-    ifstream specFile(d_binarySpecFile);
-    size_t subObjectCount = 0;
-
-    specFile >> subObjectCount;
-    string fileName;
-    specFile >> fileName;
-    specFile.close();
-
-    std::experimental::filesystem::path binSpecPath = d_binarySpecFile;
-
-    d_matLib = new MatLib();
-    d_matLib->setDirectory((binSpecPath.parent_path().string() + "/").c_str());
-    d_matLib->readFromFile((d_currentDirectory + fileName + ".mtl").c_str());
-
-    addNewSubModels(subObjectCount);
-    for (size_t idx = 0; idx != subObjectCount; ++idx)
-    {
-        SubModel &sm = getSubModel(idx);
-        string path = d_currentDirectory + fileName + "_" + to_string(idx) + d_myMeshFileExtension;
-
-        std::experimental::filesystem::path objBinFile = d_currentDirectory + fileName + "_" + to_string(idx) + d_myMeshFileExtension;
-
-        ifstream ifs(objBinFile.string(), std::ios::binary);
-        boost::archive::binary_iarchive ia(ifs);
-        MeshData md;
-        ia >> md;
-        ifs.close();
-
-        QVector<float> *qVec = new QVector<float>;
-        qVec->reserve(static_cast<int>(md.d_meshDataVec.size()));
-        for (float fl : md.d_meshDataVec)
-            qVec->append(fl);
-
-        QString usedMTLName = md.d_usedMTLName.c_str();
-
-        if (usedMTLName == "")
-            sm.setMaterial(d_material);
-        else
-            sm.setMaterial(*d_matLib->matLibFromName(usedMTLName));
-
-        sm.setParent(this);
-
-        MeshData &submodelmd = sm.getMeshData();
-        submodelmd.d_meshSize = md.d_meshSize;
-        submodelmd.d_meshData = qVec;
     }
 }
 
@@ -146,15 +92,6 @@ bool Model::prepareTexture(TextureData &texData)
         return true;
     }
 
-    // Check if a serialized version is available.
-    if (std::experimental::filesystem::exists(std::experimental::filesystem::path(texData.d_file.toStdString() + d_myTextureFileExtension)))
-    {
-        d_binaryTextureFileAvailable = true;
-        prepareTextureFromBinary(texData);
-        d_preparedTextures.insert({texData.d_file.toStdString(), texData});
-        return true;
-    }
-
     // If there's no way to avoid it, resort to actually loading the file.
     QImage textureImage(texData.d_file);
     texData.d_textureData = imageToBytes(textureImage);
@@ -162,27 +99,6 @@ bool Model::prepareTexture(TextureData &texData)
     texData.d_imageHeight = textureImage.height();
     d_preparedTextures.insert({texData.d_file.toStdString(), texData});
     return true;
-}
-
-void Model::prepareTextureFromBinary(TextureData &texData)
-{
-    std::experimental::filesystem::path readLoc(texData.d_file.toStdString() + d_myTextureFileExtension);
-
-    ifstream ifs(readLoc.string(), std::ios::binary);
-    boost::archive::binary_iarchive ia(ifs);
-    TextureData td;
-    ia >> td;
-    ifs.close();
-
-    texData.d_imageWidth = td.d_imageWidth;
-    texData.d_imageHeight = td.d_imageHeight;
-    texData.d_textureDataVec = td.d_textureDataVec;
-
-    QVector<uint8_t > *qVec = new QVector<uint8_t >;
-    qVec->reserve(static_cast<int>(texData.d_textureDataVec.size()));
-    for (uint8_t fl : texData.d_textureDataVec)
-        qVec->append(fl);
-    texData.d_textureData = qVec;
 }
 
 QVector<quint8>* Model::imageToBytes(QImage &image)

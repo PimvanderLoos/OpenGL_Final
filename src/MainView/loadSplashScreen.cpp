@@ -5,7 +5,6 @@ void MainView::loadSplashScreen()
 {
     d_splashScreen = new Entity(this);
     Model *splashModel = new Model(this);
-    splashModel->setWriteModel(false);
     SubModel *sm = new SubModel();
     splashModel->addSubModel(sm);
     d_splashScreen->setModel(splashModel);

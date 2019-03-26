@@ -13,9 +13,6 @@ void Model::loadAllMeshes()
     for (size_t idx = 0; idx != getSubModelCount(); ++idx)
         generateVAOVBO(getSubModel(idx));
 
-    if (!d_binaryMeshFileAvailable)
-        writeModelMeshData();
-
     for (size_t idx = 0; idx != getSubModelCount(); ++idx)
         getSubModel(idx).getMeshData().cleanup();
 }
@@ -52,45 +49,6 @@ void Model::generateVAOVBO(SubModel &sm)
     d_gl->glBindVertexArray(0);
 }
 
-void Model::writeModelMeshData()
-{
-    if (!d_writeModel)
-        return;
-
-    std::experimental::filesystem::path objFile = d_objectFile;
-    objFile = objFile.stem();
-
-    // Write specification file.
-    ofstream specFile(d_currentDirectory + objFile.string() + d_mySpecFileExtension);
-    specFile << getSubModelCount() << "\n" << objFile.string();
-    specFile.close();
-
-    // Write meshfiles
-    for (size_t idx = 0; idx != getSubModelCount(); ++idx)
-    {
-        SubModel &sm = getSubModel(idx);
-        sm.getMeshData().d_meshDataVec = sm.getMeshData().d_meshData->toStdVector();
-        std::experimental::filesystem::path objBinFile = d_currentDirectory + objFile.string() + "_" + to_string(idx) + d_myMeshFileExtension;
-        ofstream ofs(objBinFile.string(), std::ios::binary);
-        boost::archive::binary_oarchive oa(ofs);
-        oa << sm.getMeshData();
-        ofs.close();
-    }
-}
-
-void Model::writeModelTextureData(TextureData &texData)
-{
-    std::experimental::filesystem::path writeLoc(texData.d_file.toStdString() + d_myTextureFileExtension);
-    qDebug() << "Writelocation:" << writeLoc.c_str();
-
-    texData.d_textureDataVec = texData.d_textureData->toStdVector();
-
-    ofstream ofs(writeLoc.string(), std::ios::binary);
-    boost::archive::binary_oarchive oa(ofs);
-    oa << texData;
-    ofs.close();
-}
-
 void Model::loadAllTextures()
 {
     for (size_t idx = 0; idx != getSubModelCount(); ++idx)
@@ -114,8 +72,6 @@ void Model::loadTexture(TextureData &texData)
         texData.d_ptr = d_loadedTextures.find(texData.d_file.toStdString())->second;
         return;
     }
-    else if (!d_binaryTextureFileAvailable)
-        writeModelTextureData(texData);
 
     GLfloat f;
     d_gl->glGetFloatv(GL_MAX_TEXTURE_MAX_ANISOTROPY_EXT,&f);

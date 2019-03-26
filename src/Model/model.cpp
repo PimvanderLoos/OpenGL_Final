@@ -245,19 +245,10 @@ void Model::initRead(string resourcesDir, string relativeDirectory)
     d_currentDirectory  = resourcesDir + relativeDirectory;
     d_relativeDirectory = relativeDirectory;
     d_objectFile = "";
-    d_binarySpecFile = "";
+
     for (auto &p : filesystem::directory_iterator(d_currentDirectory))
         if (p.path().extension() == ".obj")
             d_objectFile = p.path().filename().string();
-        else if (p.path().extension() == d_mySpecFileExtension)
-            d_binarySpecFile = p.path().string();
-
-    if (d_binarySpecFile != "")
-    {
-        qDebug() << "Binary spec d_file found in folder:" << d_currentDirectory.c_str();
-        d_binaryMeshFileAvailable = true;
-        d_fileName = d_binarySpecFile.c_str();
-    }
 
     if (d_objectFile != "")
     {
@@ -266,8 +257,8 @@ void Model::initRead(string resourcesDir, string relativeDirectory)
         d_fileName = filesystem::path(d_objectFile).stem().c_str();
     }
 
-    if (!d_binaryMeshFileAvailable && !d_objectFileAvailable)
-        qDebug() << "NO BINARY OR OBJECT FILE FOUND IN FOLDER:" << d_currentDirectory.c_str();
+    if (!d_objectFileAvailable)
+        qDebug() << "NO OBJECT FILE FOUND IN FOLDER:" << d_currentDirectory.c_str();
 }
 
 // This constructor also loads MTL files!

@@ -48,12 +48,10 @@ class Model
         std::string d_currentDirectory;
         std::string d_relativeDirectory;
         bool d_objectFileAvailable = false;
-        bool d_binaryMeshFileAvailable = false;
-        bool d_binaryTextureFileAvailable = false;
-        std::string d_binarySpecFile;
+
         std::string d_objectFile;
         ShaderType d_shaderType = ShaderType::DEFAULT;
-        bool d_writeModel = true; // Whether or not this model should be serialized.
+        static constexpr bool d_writeModel = false; // Whether or not this model should be serialized.
 
         std::unordered_map<std::string, TextureData> d_preparedTextures;
         std::unordered_map<std::string, GLuint>  d_loadedTextures;
@@ -74,17 +72,13 @@ class Model
 
         // Model preparation.
         void prepareMesh();
-        void prepareMeshFromBinary();
         void generateMeshData(SubModel &sm);
         bool prepareTexture(TextureData &texData);
-        void prepareTextureFromBinary(TextureData &texData);
         QVector<quint8>* imageToBytes(QImage &image);
 
         // Model loading.
         void loadAllMeshes();
         void generateVAOVBO(SubModel &sm);
-        void writeModelMeshData();
-        void writeModelTextureData(TextureData &texData);
         void loadAllTextures();
         void loadTextures(SubModel &sm);
         void loadTexture(TextureData &texData);
@@ -99,10 +93,6 @@ class Model
 
         size_t getID() const;
 
-        static constexpr char d_myMeshFileExtension[]    = ".fastMesh";
-        static constexpr char d_mySpecFileExtension[]    = ".spec";
-        static constexpr char d_myTextureFileExtension[] = ".fastTex";
-
         void addSubModel(SubModel *sub);
         void addNewSubModels(size_t count);
         SubModel &getSubModel(size_t idx);
@@ -111,8 +101,6 @@ class Model
 
         std::string const &getCurrentDirectory() const;
         std::string const &getRelativeDirectory() const;
-
-        void setWriteModel(bool val);
 
         void unitize();
 
@@ -180,10 +168,5 @@ struct ModelComparator
         return m1->getID() == m2->getID();
     }
 };
-
-inline void Model::setWriteModel(bool val)
-{
-    d_writeModel = val;
-}
 
 #endif

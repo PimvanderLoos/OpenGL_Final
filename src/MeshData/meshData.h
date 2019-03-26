@@ -3,21 +3,9 @@
 
 #include <QVector>
 
-#include <boost/archive/binary_oarchive.hpp>
-#include <boost/archive/binary_iarchive.hpp>
-#include <boost/serialization/vector.hpp>
-#include <boost/serialization/string.hpp>
 
 class MeshData
 {
-    private:
-        friend class boost::serialization::access;
-
-        template<class Archive>
-        void save(Archive &ar, const unsigned int version) const;
-        template<class Archive>
-        void load(Archive & ar, const unsigned int version);
-        BOOST_SERIALIZATION_SPLIT_MEMBER()
 
     public:
         QVector<float> *d_meshData;
@@ -28,24 +16,6 @@ class MeshData
 
         void cleanup();
 };
-
-template<class Archive>
-inline void MeshData::save(Archive &ar, const unsigned int version) const
-{
-    ar &d_meshSize;
-    ar &d_meshDataVec;
-    ar &d_usedMTLName;
-//    ar &d_meshName;
-}
-
-template<class Archive>
-inline void MeshData::load(Archive &ar, const unsigned int version)
-{
-    ar &d_meshSize;
-    ar &d_meshDataVec;
-    ar &d_usedMTLName;
-//    ar &d_meshName;
-}
 
 inline void MeshData::cleanup()
 {

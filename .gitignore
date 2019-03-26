@@ -40,13 +40,13 @@ cmake-build-debug-gcc9/*
 *.stash
 .idea/*
 resources/*
-game/*
+OpenGL_Final/*
 CMakeFiles/*
-Game.pro.user
+OpenGL_Final.pro.user
 Makefile
 
 # Qt shit
-Game
+OpenGL_Final
 moc_mainview.cpp
 moc_mainwindow.cpp
 moc_predefs.h

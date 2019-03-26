@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(game)
+project(Open_GL_Final)
 
 find_package(Qt5Core REQUIRED)
 find_package(Qt5Widgets REQUIRED)
@@ -59,6 +59,6 @@ QT5_WRAP_UI(${UI_FILES})
 
 set(QT_INCLUDES Qt5::Core Qt5::Widgets Qt5::Quick)
 
-target_link_libraries(game ${QT_INCLUDES} stdc++fs -lboost_serialization)
+target_link_libraries(game ${QT_INCLUDES} stdc++fs)
 
 message(${QT_INCLUDES})

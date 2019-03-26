@@ -1,57 +1,14 @@
 MODELS:
-dir: water/
-scale: 600
-cOffset: 1.4 -0.3 0.5
-rOffset: 0 0 0
-sType: 1
-
-dir: sun/
-scale: 200
-cOffset: 1.5 -0.7 0
-rOffset: 0 0 0
-sType: 0
-defaultModel
-
-dir: koi_white/
-scale: 5
-cOffset: 1.5 -0.7 0
-rOffset: 0 90 0
-sType: 0
-
-dir: house/
-scale: 90
-cOffset: 1.5 0 0
-rOffset: 0 0 0
-sType: 0
-
-dir: sniper/
-scale: 5
-cOffset: 0.37 -0.1 -0.16
-rOffset: 0 90 0
-sType: 0
-
-dir: chopper/
-scale: 98
-cOffset: 0.5 -0.3 0
-rOffset: 0 180 0
-sType: 0
-
-dir: island/
-scale: 400
-cOffset: 1.5 -0.7 0
-rOffset: 0 270 0
-sType: 0
-
 dir: cat2/
 scale: 5
 cOffset: 1.5 -0.7 0
 rOffset: 0 90 0
 sType: 0
 
-dir: koi_red/
-scale: 5
-cOffset: 1.5 -0.7 0
-rOffset: 0 90 0
+dir: elephant/
+scale: 12
+cOffset: 1.5 -0.8 0
+rOffset: 0 178 0
 sType: 0
 
 dir: cube/
@@ -60,61 +17,62 @@ cOffset: 1.5 -0.5 0
 rOffset: 0 0 0
 sType: 0
 
-dir: elephant/
-scale: 10
-cOffset: 1.5 -0.8 0
-rOffset: 0 178 0
+dir: water/
+scale: 600
+cOffset: 1.4 -0.3 0.5
+rOffset: 0 0 0
+sType: 1
+
+dir: koi_red/
+scale: 5
+cOffset: 1.5 -0.7 0
+rOffset: 0 90 0
+sType: 0
+
+dir: sun/
+scale: 200
+cOffset: 1.5 -0.7 0
+rOffset: 0 0 0
+sType: 0
+defaultModel
+
+dir: chopper/
+scale: 98
+cOffset: 0.5 -0.3 0
+rOffset: 0 180 0
+sType: 0
+
+dir: windmill/
+scale: 120
+cOffset: 1.5 0 0
+rOffset: 0 0 0
+sType: 0
+
+dir: house/
+scale: 90
+cOffset: 1.5 0 0
+rOffset: 0 0 0
+sType: 0
+
+dir: koi_white/
+scale: 5
+cOffset: 1.5 -0.7 0
+rOffset: 0 90 0
+sType: 0
+
+dir: sniper/
+scale: 5
+cOffset: 0.37 -0.1 -0.16
+rOffset: 0 90 0
+sType: 0
+
+dir: island/
+scale: 400
+cOffset: 1.5 -0.7 0
+rOffset: 0 270 0
 sType: 0
 
 ENTITIES:
-pos: 2.23 -49 -39.98
-rot: 0 0 0
-cOffset: 0 0 0
-rOffset: 0 0 0
-scale: 0
-gravity: 9.81
-model: water
-
-pos: 3698 4321 6940
-rot: 0 0 0
-cOffset: 0 0 0
-rOffset: 0 0 0
-scale: 0
-gravity: 0
-model: sun
-
-pos: 76.3 16.01 25.9
-rot: 0 178.7 0
-cOffset: 0 0 0
-rOffset: 0 0 0
-scale: 0
-gravity: 9.81
-model: house
-
-pos: 34.15 -35.53 -227.81
-rot: 0 -108.139 0
-cOffset: 0 0 0
-rOffset: 0 0 0
-scale: 0
-gravity: 9.81
-model: sniper
-
-pos: -73.24 -34.53 -154.52
-rot: 0 -86.9262 0
-cOffset: 0 0 0
-rOffset: 358 357 1
-scale: 0
-gravity: 9.81
-model: chopper
-
-pos: 0 16.4 -35
-rot: 0 0 0
-cOffset: 0 0 0
-rOffset: 0 0 0
-scale: 0
-gravity: 9.81
-model: island
-
 pos: 57.58 7.1 -308.28
 rot: 0 90.6248 0
 cOffset: 0 0 0
@@ -583,9 +541,89 @@ pos: 59.53 7.1 -309.3
 rot: 0 -182.373 0
 cOffset: 0 0 0
 rOffset: 0 0 0
-scale: 0
+scale: 1
 gravity: 9.81
 model: cat2
+
+pos: -247.454 31.6412 -109.511
+rot: 0 1.32684 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 237
+gravity: 9.81
+model: cat2
+
+pos: 70.71 -37.24 -88.92
+rot: 0 2.43635 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: elephant
+
+pos: 37.55 -37.79 -104.21
+rot: 0 148.138 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: elephant
+
+pos: 62.64 -36.97 -65.95
+rot: 0 60.0126 0
+cOffset: 0 0 0
+rOffset: 0 0 84
+scale: 0
+gravity: 9.81
+model: elephant
+
+pos: 142.74 -23.02 -103.75
+rot: 0 22.0534 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: elephant
+
+pos: -1.63 12.5 -13.51
+rot: 0 -24.4898 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: elephant
+
+pos: -17.99 -39.36 -99
+rot: 0 31.8115 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: elephant
+
+pos: 82.16 -20.71 -9.62
+rot: 0 -0.0126411 0
+cOffset: 0 0 0
+rOffset: 20 0 0
+scale: 0
+gravity: 9.81
+model: elephant
+
+pos: -10.36 -18.26 -5.6
+rot: 0 9.78329 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: elephant
+
+pos: 2.23 -49 -39.98
+rot: 0 0 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: water
 
 pos: -110.91 -56.15 -193.8
 rot: 0 -20.7785 0
@@ -595,12 +633,60 @@ scale: 0
 gravity: 9.81
 model: koi_red
 
-pos: 25.3506 -38.64 -207.442
-rot: 0 -122.385 0
+pos: 3698 4321 6940
+rot: 0 0 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 0
+model: sun
+
+pos: -73.24 -34.53 -154.52
+rot: 0 -86.9262 0
+cOffset: 0 0 0
+rOffset: 358 357 1
+scale: 0
+gravity: 9.81
+model: chopper
+
+pos: -1.35 71.66 49.67
+rot: 0 -177.488 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 1
+gravity: 9.81
+model: windmill
+
+pos: 76.3 16.01 25.9
+rot: 0 178.7 0
 cOffset: 0 0 0
 rOffset: 0 0 0
 scale: 0
 gravity: 9.81
-model: elephant
+model: house
+
+pos: 34.15 -35.53 -227.81
+rot: 0 -108.139 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: sniper
+
+pos: 12.8208 -2.00994 -318.471
+rot: 0 -137.105 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 1
+gravity: 9.81
+model: sniper
 mainEntity
+
+pos: 0 16.4 -35
+rot: 0 0 0
+cOffset: 0 0 0
+rOffset: 0 0 0
+scale: 0
+gravity: 9.81
+model: island
 

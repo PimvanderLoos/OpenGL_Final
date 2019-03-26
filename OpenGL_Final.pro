@@ -11,7 +11,7 @@ QMAKE_LFLAGS += -lstdc++fs
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-LIBS += -lstdc++fs -lboost_serialization
+LIBS += -lstdc++fs
 
 TARGET = OpenGL_Final
 TEMPLATE = app
